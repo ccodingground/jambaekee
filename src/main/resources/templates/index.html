@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<script src="/js/jquery-3.5.1.min.js"></script>
+	<script src="/js/srarch.js"></script>
+	<script src="/js/visual.js"></script>
+	<link rel="stylesheet" type="text/css" href="/css/index.css">
+</head>
+<body>
+	<!-- 헤더 태그를 포함할 영역 /commons/header.html의 플래그먼트 header를 포함시킨다. -->
+	<div th:insert="/commons/header :: header"></div>
+	<main>
+		<section id="visual">
+			<!-- li(이미지들) 1장만 보여줄 크기 -->
+			<div class="visual-area">
+				<!-- li를 여러개 늘여뜰인 통짜이미지ul로 -->
+				<ul class="images-wrap">
+					<li class="first"></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+		</section>
+	</main>
+	<!-- 헤더 태그를 포함할 영역 /commons/footer.html의 플래그먼트 footer를 포함시킨다. -->
+	<div th:insert="/commons/footer :: footer"></div>
+
+</body>
+</html>

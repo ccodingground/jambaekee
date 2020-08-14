@@ -1,0 +1,46 @@
+@charset "UTF-8";
+#company{
+	height: 294px;
+	padding: 70px 0;
+}
+#company>.wrap{
+	height: 152px;
+	width:850px;
+	margin: 0 auto;
+}
+#company .cs{
+	width: 300px;
+}
+#company .cs p{
+	text-align: center;
+}
+#company .com{
+	width: 550px;
+	text-align: center;
+}
+#company .tit{
+	font-size: 15px;
+	color: #000;
+	font-weight: 700;
+}
+#company .tel{
+	font-family: 'Archivo Black', sans-serif;
+	font-size: 33px;
+	color: #222;
+	font-weight: 700;
+	padding: 28px 0;
+}
+#company .open{
+	font-size: 13px;
+	letter-spacing: -1px;
+}
+#company .com .wrap{
+	padding-top: 28px;
+	font-size: 13px;
+	letter-spacing: -1px;
+	
+}
+#company .com .wrap span{
+	padding: 0 5px;
+	line-height: 1.8;
+}

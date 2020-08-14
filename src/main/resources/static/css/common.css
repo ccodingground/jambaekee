@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url("header.css");
+@import url("footer.css");
+/* 헤더CSS,푸터CSS */
+
+*{padding: 0;margin: 0;box-sizing: border-box;}
+li{list-style-type: none;}
+a{	color: #222;text-decoration: none;}
+body{
+	font-size: 14px;
+	color: #222;
+	font-family: 'Nanum Gothic', sans-serif;
+}
+img{
+	border: none;
+	outline: none;
+}
+h1{
+	position: absolute;
+	left: -9999px;
+}
+button{
+	background: none;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+/* 화면기본사이즈설정 가운데정렬 */
+.view-size{
+	width: 1170px;
+	margin: 0 auto;
+}
+/* items를 가로방향으로 정렬 */
+.flex{
+	display: flex;
+}
+/* items를 가로방향으로 오른쪽정렬 */
+.flex-right{
+	display: flex;
+	justify-content: flex-end;
+}
+/* items를 가로방향으로 양쪽정렬 */
+.flex-between{
+	display: flex;
+	justify-content: space-between;
+}
+/* items를 가로방향으로 가운데정렬 */
+.flex-center{
+	display: flex;
+	justify-content: center;
+}
+
+/* items를 세로방향으로 가운데정렬 */
+.flex-column-center{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	
+</head>
+<body>
+	<header th:fragment="header">
+		<h1>상단영역</h1>
+		<div class="wrap">
+			<div class="top-side-out">
+				<section id="top-side">
+					<h1>user-menu</h1>
+					<div class="wrap flex-right">
+						<nav id="user-menu" class="flex-column-center">
+							<h1>user-side</h1>
+							<ul class="flex">
+								<li><a href="#">LOGIN</a></li>
+								<li><a href="#">JOIN</a></li>
+								<li><a href="#">CART<span>0</span></a></li>
+								<li><a href="#">MY PAGE</a></li>
+							</ul>
+						</nav>
+						<section id="search" class="flex-column-center">
+							<h1>검색</h1>
+							<div class="flex-center">
+								<button id="btn-search">
+									<img alt="검색버튼" src="/images/search.png">
+								</button>
+							</div>
+							
+						</section>
+						
+					</div>
+				</section>
+			</div>
+			<section id="main-menu">
+				<h1>main-menu</h1>
+				<div class="wrap flex-column-center">
+					<ul class="flex-center">
+						<li><a href="#">잠백이이야기</a></li>
+						<li><a href="#">잠백이알약</a></li>
+						<li><a href="#">잠백이즙</a></li>
+						<li><a href="#">잠백이굿즈</a></li>
+						<li><a href="#">커뮤니티</a></li>
+						<li><a href="#">리뷰</a></li>
+					</ul>
+					<div class="logo flex-column-center" >
+						<a href="#">
+							<img alt="로고" src="/images/logo.png">
+						</a>
+					</div>
+				</div>
+			</section>
+		
+			<div id="search-body">
+				<form>
+					<div class="wrap">
+						<span>검색</span>
+						<input type="text" name="search" placeholder="검색어를 입력 하세요!">
+						<input type="submit" value="GO">
+						<button id="btn-close">X</button>
+					</div>
+					<div class="recommend">
+						<span>추천 검색어</span>
+					</div>
+				</form>
+			</div>
+		</div>
+	</header>
+</body>
+</html>
